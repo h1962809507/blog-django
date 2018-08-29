@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+		
+        ul{
+            height: 50px;
+            width: 500px;
+            list-style: none;
+            border: 1px solid gray; 
+            margin: 50px auto;
+            background-color: white;
+        }
+        li{
+            float: left;
+            margin: 5px;
+            line-height: 40px;
+        }
+        #aqua{
+            height: 40px;
+            width: 40px;
+            background-color:aqua;
+        }
+        #green{
+            height: 40px;
+            width: 40px;
+            background-color:green;
+        }
+        #pink{
+            height: 40px;
+            width: 40px;
+            background-color:pink;
+        }
+        #black{
+            height: 40px;
+            width: 40px;
+            background-color:black;
+        }
+        #khaki{
+            height: 40px;
+            width: 40px;
+            background-color:khaki;
+        }
+	</style>
+	<script>
+        window.onload = function(){
+            var oBody = document.getElementById("body")
+            var oLink = document.getElementById("link")
+            var oAqua = document.getElementById("aqua");
+            var oGreen = document.getElementById("green");
+            var oPink = document.getElementById("pink");
+            var oBlack = document.getElementById("black");
+            var oKhaki = document.getElementById("khaki");
+            
+            oAqua.onclick = function(){
+                oBody.style.background='aqua'
+            }
+            oGreen.onclick = function(){
+                oBody.style.background='green'
+            }
+            oPink.onclick = function(){
+                oBody.style.background='pink'
+            }
+            oBlack.onclick = function(){
+                oBody.style.background='black'
+            }
+            oKhaki.onclick = function(){
+                oBody.style.background='khaki'
+            }
+
+        }
+
+	</script>
+    
+</head>
+<body style="background:white" id="body">
+    <ul>
+        <li>请选择网页的背景色：</li>
+        <li id="aqua"></li>
+        <li id="green"></li>
+        <li id="pink"></li>
+        <li id="black"></li>
+        <li id="khaki"></li>
+
+    </ul>
+</body>
+</html>
